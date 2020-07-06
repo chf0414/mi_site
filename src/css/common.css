@@ -1,0 +1,216 @@
+/* iconfont */
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.ttf") format("truetype");
+}
+[class*="iconfont"] {
+  font-family: iconfont !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconfont-heart:before {
+  content: "\E62D";
+}
+.iconfont-redheart:before {
+  content: "\E62E";
+}
+.iconfont-location:before {
+  content: "\E637";
+}
+.iconfont-gouxuan::before {
+  content: "\E618";
+}
+.iconfont-arrow:before {
+  content: "\E623";
+}
+.iconfont-left:before {
+  content: "\E628";
+}
+.iconfont-right:before {
+  content: "\E623";
+}
+.iconfont-circle-arrow-right:before {
+  content: "\E615";
+}
+.iconfont-play:before {
+  content: "\E601";
+}
+
+/* layout */
+.wrap {
+  position: relative;
+  min-width: 1226px;
+  background-color: #fff;
+  font: 14px/1.5 arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  color: #333;
+}
+.container {
+  width: 1226px;
+  margin: 0 auto;
+}
+.relative {
+  position: relative;
+}
+a {
+  color: #757575;
+}
+.btn {
+  display: inline-block;
+  width: 158px;
+  height: 38px;
+  border: 1px solid #b0b0b0;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  color: #b0b0b0;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.slider-btn {
+  width: 40px !important;
+  height: 70px !important;
+  line-height: 70px;
+  color: #cfc8c8;
+}
+.slider-btn:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+.mi-checkbox {
+  display: block;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  margin-left: 30px;
+  float: left;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: block;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  content: "";
+}
+
+/*reset
+------------------------------*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+th,
+td,
+figure {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font: inherit;
+}
+input {
+  text-align: inherit;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+  vertical-align: top;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+em,
+i {
+  font-style: normal;
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: none;
+}
+body {
+  background-color: #fff;
+  font: 14px/2 microsoft yahei, simsun, simhei, sans-serif;
+  color: #333;
+}
+:link,
+:visited {
+  text-decoration: none;
+  text-decoration: none;
+}
+:focus,
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+}
+/*reset end*/

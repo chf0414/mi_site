@@ -1,0 +1,135 @@
+/* 导航区域 */
+.header-nav {
+  position: relative;
+  height: 100px;
+}
+.header-nav-logo {
+  position: absolute;
+  top: 22px;
+  display: block;
+  width: 55px;
+  height: 55px;
+  overflow: hidden;
+  background-color: #ff6700;
+}
+.header-nav-logo:after,
+.header-nav-logo:before {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  content: "";
+  transform-origin: 50% 50%;
+  transition: all 0.2s;
+}
+.header-nav-logo:before {
+  background: url(../images/mi-logo.png) no-repeat 50% 50%;
+  opacity: 1;
+}
+.header-nav-logo:after,
+.header-nav-logo:before {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.header-nav-logo:after {
+  background: url(../images/mi-home.png) no-repeat 50% 50%;
+  opacity: 0;
+  margin-left: -55px;
+}
+.header-nav-logo:hover:before {
+  opacity: 0;
+}
+.header-nav-logo:hover:after,
+.header-nav-logo:hover:before {
+  transform: translate3d(55px, 0, 0);
+}
+.header-nav-logo:hover:after {
+  opacity: 1;
+}
+.header-nav-list {
+  float: left;
+}
+.header-nav-list .header-nav-item {
+  float: left;
+  padding-top: 36px;
+}
+.header-nav-item a {
+  font-size: 16px;
+  color: #333333;
+  margin: 0;
+  padding: 26px 10px 38px;
+}
+.header-nav-item a:hover {
+  color: #ff6700;
+}
+.header-search {
+  float: right;
+  width: 296px;
+  margin-top: 25px;
+}
+.header-search .search-form {
+  position: relative;
+  width: 296px;
+  height: 50px;
+}
+.header-search .search-form .search-text {
+  position: absolute;
+  top: 0;
+  right: 51px;
+  z-index: 1;
+  width: 245px;
+  height: 50px;
+  padding: 0 10px;
+  border: 1px solid #e0e0e0;
+  outline: 0;
+  font-size: 14px;
+  line-height: 50px;
+}
+.site-nav .search-form-active .search-text,
+.site-nav .search-form-active .btn-search {
+  border-color: #ff6700;
+}
+.site-nav .search-keywords {
+  position: absolute;
+  top: 14px;
+  right: 62px;
+  z-index: 2;
+  text-align: right;
+}
+.site-nav .search-keywords a {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 5px;
+  background: #eee;
+  font-size: 12px;
+  color: #757575;
+}
+.site-nav .search-keywords a:hover {
+  background: #ff6700;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  color: #fff;
+}
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 52px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  outline: 0;
+  background: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  color: #616161;
+}
+.iconfont:before {
+  content: "\E616";
+}
+.btn-search em {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 24px;
+  line-height: 24px;
+}

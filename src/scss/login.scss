@@ -1,0 +1,167 @@
+$orange_ff6700: #ff6700;
+.wrap {
+  .header {
+    h1 {
+      width: 200px;
+      height: 98px;
+      background-image: url(../images/mi-login_logo.png);
+    }
+  }
+  .main {
+    height: 556px;
+    background: {
+      repeat: no-repeat;
+      position: top center;
+      image: url(../images/login-bg.jpg);
+    }
+    .login {
+      background-color: #fff;
+      margin-left: 765px;
+      width: 410px;
+      height: 556px;
+      font-size: 14px;
+      .tabs {
+        padding: 27px 0 24px;
+        text-align: center;
+        font-size: 24px;
+        color: #666;
+        a {
+          color: #666;
+        }
+        a.active {
+          color: $orange_ff6700;
+        }
+        .sep {
+          width: 1px;
+          height: 24px;
+          margin: 0 35px 0 42px;
+          border: 1px solid #e0e0e0;
+        }
+      }
+      .from {
+        width: 336px;
+        margin: 0 auto;
+        input {
+          box-sizing: border-box;
+          width: 336px;
+          height: 52px;
+          line-height: 22px;
+          padding: 13px 16px 13px 14px;
+          margin-bottom: 14px;
+          display: block;
+        }
+        input:nth-child(3) {
+          margin-top: 24px;
+          background-color: #ff6700;
+          text-align: center;
+          font-size: 14px;
+          color: #fff;
+          cursor: pointer;
+          border: none;
+        }
+        .other_links {
+          .change_login_type {
+            color: $orange_ff6700;
+          }
+          .register,
+          .sep,
+          .forget_pwd {
+            color: #999;
+            float: right;
+            margin: 0 3px;
+          }
+        }
+        .other_login_type {
+          margin-top: 110px;
+          p {
+            position: relative;
+            border-bottom: 1px solid #bbb;
+            i {
+              background-color: #fff;
+              top: -9px;
+              left: 127px;
+              position: absolute;
+              color: #bbb;
+            }
+          }
+          .links {
+            padding-left: 59px;
+            padding-top: 25px;
+            a {
+              width: 30px;
+              height: 30px;
+              margin: 0 12px;
+              display: inline-block;
+              border-radius: 50%;
+              i {
+                height: 18px;
+                margin-top: 6px;
+                display: inline-block;
+                vertical-align: middle;
+              }
+            }
+            a:nth-child(1) {
+              background-color: #0288d1;
+              i {
+                width: 18px;
+                margin-left: 5px;
+                background: url(../images/icons_type.png) no-repeat -18px 0;
+              }
+            }
+            a:nth-child(2) {
+              background-color: #d32f2f;
+              i {
+                width: 20px;
+                margin-left: 6px;
+                background: url(../images/icons_type.png) no-repeat -37px 0;
+              }
+            }
+            a:nth-child(3) {
+              background-color: #0ae;
+              i {
+                width: 25px;
+                margin-left: 4px;
+                background: url(../images/icons_type.png) no-repeat -57px 0;
+              }
+            }
+            a:nth-child(4) {
+              background-color: #00d20d;
+              i {
+                width: 24px;
+                margin-left: 4px;
+                background: url(../images/icons_type.png) no-repeat -84px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    margin-top: 80px;
+    height: 80px;
+    text-align: center;
+    ul {
+      li {
+        display: inline-block;
+        a {
+          color: #757575;
+          padding: 0 10px;
+        }
+        a.active {
+          color: #333;
+        }
+        a:hover {
+          color: #333;
+        }
+      }
+    }
+    p {
+      color: #757575;
+      padding-top: 10px;
+      a {
+        color: #757575;
+      }
+    }
+  }
+}
