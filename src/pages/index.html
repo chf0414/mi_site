@@ -111,7 +111,7 @@
           </div>
         </div>
       </div>
-      <div class="relative clearfix">
+      <div class="header-main clearfix">
         <ul class="category-list">
           <li><a class="title" href="javascript:;">手机 电话卡 <em class="iconfont-arrow"></em></a></li>
           <li><a class="title" href="javascript:;">电视 盒子<em class="iconfont-arrow"></em></a></li>
@@ -124,14 +124,14 @@
           <li><a class="title" href="javascript:;">耳机 音箱<em class="iconfont-arrow"></em></a></li>
           <li><a class="title" href="javascript:;">生活 箱包<em class="iconfont-arrow"></em></a></li>
         </ul>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="../images/banner-1.jpg"></div>
-            <div class="swiper-slide"><img src="../images/banner-2.webp"></div>
-            <div class="swiper-slide"><img src="../images/banner-3.webp"></div>
-            <div class="swiper-slide"><img src="../images/banner-4.webp"></div>
-            <div class="swiper-slide"><img src="../images/banner-5.webp"></div>
-          </div>
+        <div class="swiper-container" id="banner_swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><a href="#"><img src="../images/banner-1.jpg"></a></li>
+            <li class="swiper-slide"><a href="#"><img src="../images/banner-2.webp"></a></li>
+            <li class="swiper-slide"><a href="#"><img src="../images/banner-3.webp"></a></li>
+            <li class="swiper-slide"><a href="#"><img src="../images/banner-4.webp"></a></li>
+            <li class="swiper-slide"><a href="#"><img src="../images/banner-5.webp"></a></li>
+          </ul>
           <div class="swiper-pagination"></div>
           <div class="swiper-button-prev slider-btn"></div>
           <div class="swiper-button-next slider-btn"></div>
@@ -187,12 +187,8 @@
     <div class="main">
       <div class="container">
         <div class="section flashsale clearfix">
-          <div class="section-header">
+          <div class="section-header flashsale-header">
             <h2>小米闪购</h2>
-            <div class="flashsale-btn">
-              <a href="javscript:;"><em class="iconfont-left"></em></a>
-              <a href="javscript:;"><em class="iconfont-right"></em></a>
-            </div>
           </div>
           <div class="flashsale-left">
             <div class="round">00:00 场</div>
@@ -206,48 +202,98 @@
               <span>22</span>
             </div>
           </div>
-          <ul class="flashsale-content">
-            <li class="flashsale-item item1">
-              <a href="#">
-                <img src="../images/section-flashsale-02.webp">
-                <h3 class="title">日常元素抽纸 青春版 24包/箱</h3>
-                <p class="desc">精选原生竹浆，健康环保</p>
-                <p class="price">
-                  <span>27.9</span>元<del><span>32.9</span>元</del>
-                </p>
-              </a>
-            </li>
-            <li class="flashsale-item item2">
-              <a href="#">
-                <img src="../images/section-flashsale-03.webp">
-                <h3 class="title">智睿LED灯泡 10只装</h3>
-                <p class="desc">智睿LED灯泡 10只装</p>
-                <p class="price">
-                  <span>99</span>元<del><span>149</span>元</del>
-                </p>
-              </a>
-            </li>
-            <li class="flashsale-item item3">
-              <a href="#">
-                <img src="../images/section-flashsale-04.webp">
-                <h3 class="title">TOKIT迷你智能电烤箱 黑色</h3>
-                <p class="desc">精致烤箱融合智能操控</p>
-                <p class="price">
-                  <span>499</span>元<del><span>599</span>元</del>
-                </p>
-              </a>
-            </li>
-            <li class="flashsale-item item4">
-              <a href="#">
-                <img src="../images/section-flashsale-05.webp">
-                <h3 class="title">定频 | 米家空调 大1匹</h3>
-                <p class="desc">出众静音，快速制冷热</p>
-                <p class="price">
-                  <span>1499</span>元<del><span>1799</span>元</del>
-                </p>
-              </a>
-            </li>
-          </ul>
+          <div class="flashsale-slider swiper-container" id="flashsale_swiper">
+            <div class="swiper-wrapper flashsale-slider-wrapper">
+              <div class="swiper-slide flashsale-item swiper-slide-prev item1">
+                <a href="#">
+                  <img src="../images/section-flashsale-02.webp">
+                  <h3 class="title">日常元素抽纸 青春版 24包/箱</h3>
+                  <p class="desc">精选原生竹浆，健康环保</p>
+                  <p class="price">
+                    <span>27.9</span>元<del><span>32.9</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item swiper-slide-active item2">
+                <a href="#">
+                  <img src="../images/section-flashsale-03.webp">
+                  <h3 class="title">智睿LED灯泡 10只装</h3>
+                  <p class="desc">智睿LED灯泡 10只装</p>
+                  <p class="price">
+                    <span>99</span>元<del><span>149</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item swiper-slide-next item3">
+                <a href="#">
+                  <img src="../images/section-flashsale-04.webp">
+                  <h3 class="title">TOKIT迷你智能电烤箱 黑色</h3>
+                  <p class="desc">精致烤箱融合智能操控</p>
+                  <p class="price">
+                    <span>499</span>元<del><span>599</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item item4">
+                <a href="#">
+                  <img src="../images/section-flashsale-05.webp">
+                  <h3 class="title">定频 | 米家空调 大1匹</h3>
+                  <p class="desc">出众静音，快速制冷热</p>
+                  <p class="price">
+                    <span>1499</span>元<del><span>1799</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item swiper-slide-prev item1">
+                <a href="#">
+                  <img src="../images/section-flashsale-02.webp">
+                  <h3 class="title">日常元素抽纸 青春版 24包/箱</h3>
+                  <p class="desc">精选原生竹浆，健康环保</p>
+                  <p class="price">
+                    <span>27.9</span>元<del><span>32.9</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item swiper-slide-active item2">
+                <a href="#">
+                  <img src="../images/section-flashsale-03.webp">
+                  <h3 class="title">智睿LED灯泡 10只装</h3>
+                  <p class="desc">智睿LED灯泡 10只装</p>
+                  <p class="price">
+                    <span>99</span>元<del><span>149</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item swiper-slide-next item3">
+                <a href="#">
+                  <img src="../images/section-flashsale-04.webp">
+                  <h3 class="title">TOKIT迷你智能电烤箱 黑色</h3>
+                  <p class="desc">精致烤箱融合智能操控</p>
+                  <p class="price">
+                    <span>499</span>元<del><span>599</span>元</del>
+                  </p>
+                </a>
+              </div>
+              <div class="swiper-slide flashsale-item item4">
+                <a href="#">
+                  <img src="../images/section-flashsale-05.webp">
+                  <h3 class="title">定频 | 米家空调 大1匹</h3>
+                  <p class="desc">出众静音，快速制冷热</p>
+                  <p class="price">
+                    <span>1499</span>元<del><span>1799</span>元</del>
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flashsale-swiper-button">
+            <span class="my-button-prev">
+              <i class="iconfont-left"></i>
+            </span>
+            <span class="my-button-next">
+              <i class="iconfont-right"></i>
+            </span>
+          </div>
         </div>
         <div class="banner clearfix">
           <a href="#">
@@ -980,29 +1026,29 @@
               <span class="play">
                 <i class="iconfont-play"></i>
               </span>
-              <h3 class="title">Redmi 10X系列发布会</h3>
-              <h4 class="subtitle;">Redmi 10X系列发布会</h4>
+              <h3>Redmi 10X系列发布会</h3>
+              <h4>Redmi 10X系列发布会</h4>
             </li>
             <li class="video-item section-item">
               <img src="../images/section-video-02.webp">
               <span class="play">
                 <i class="iconfont-play"></i>
               </span>
-              <h3 class="title">小米10 青春版 发布会</h3>
+              <h3>小米10 青春版 发布会</h3>
             </li>
             <li class="video-item section-item">
               <img src="../images/section-video-03.webp">
               <span class="play">
                 <i class="iconfont-play"></i>
               </span>
-              <h3 class="title">小米10 8K手机拍大片</h3>
+              <h3>小米10 8K手机拍大片</h3>
             </li>
             <li class="video-item section-item">
               <img src="../images/section-video-04.webp">
               <span class="play">
                 <i class="iconfont-play"></i>
               </span>
-              <h3 class="title">小米10发布会</h3>
+              <h3>小米10发布会</h3>
             </li>
           </ul>
         </div>
